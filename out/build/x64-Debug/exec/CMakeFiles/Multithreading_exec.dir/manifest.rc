@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "C:/Users/Thomas/Documents/GitHub/PhysicEngine/out/build/x64-Debug/exec/CMakeFiles/Multithreading_exec.dir/embed.manifest"

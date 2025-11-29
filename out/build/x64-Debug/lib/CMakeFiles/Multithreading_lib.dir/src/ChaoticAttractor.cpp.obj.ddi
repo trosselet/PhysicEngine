@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "lib\\CMakeFiles\\Multithreading_lib.dir\\src\\ChaoticAttractor.cpp.obj",
+            "outputs": [
+                "C:\\Users\\Thomas\\Documents\\GitHub\\PhysicEngine\\out\\build\\x64-Debug\\vc140.pdb",
+                "lib\\CMakeFiles\\Multithreading_lib.dir\\src\\ChaoticAttractor.cpp.obj.ddi"
+            ],
+            "requires": []
+        }
+    ]
+}

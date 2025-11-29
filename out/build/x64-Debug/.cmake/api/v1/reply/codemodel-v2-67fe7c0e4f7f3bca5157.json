@@ -1,0 +1,123 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "lib",
+					"jsonFile" : "directory-lib-Debug-e9069484d90298468a11.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "lib",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "exec",
+					"jsonFile" : "directory-exec-Debug-8f3271e1156159aff04d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "exec",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "THOMAS_MULTITHREADER_PROFESSIONNEL"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Multithreading_lib",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "Multithreading_exec",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "Multithreading_exec::@829df66619dbaeca8ef6",
+					"jsonFile" : "target-Multithreading_exec-Debug-85880087482e94a724c9.json",
+					"name" : "Multithreading_exec",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Multithreading_lib::@306ed2d68c6501e8728f",
+					"jsonFile" : "target-Multithreading_lib-Debug-00b419de163f6f3aec10.json",
+					"name" : "Multithreading_lib",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Thomas/Documents/GitHub/PhysicEngine/out/build/x64-Debug",
+		"source" : "C:/Users/Thomas/Documents/GitHub/PhysicEngine"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

@@ -1,0 +1,15 @@
+ninja_dyndep_version = 1.0
+build lib\CMakeFiles\Multithreading_lib.dir\src\Application.cpp.obj: dyndep
+
+build lib\CMakeFiles\Multithreading_lib.dir\src\BoxCollider.cpp.obj: dyndep
+
+build lib\CMakeFiles\Multithreading_lib.dir\src\CameraMovement.cpp.obj: dyndep
+
+build lib\CMakeFiles\Multithreading_lib.dir\src\ChaoticAttractor.cpp.obj: dyndep
+
+build lib\CMakeFiles\Multithreading_lib.dir\src\Particle.cpp.obj: dyndep
+
+build lib\CMakeFiles\Multithreading_lib.dir\src\RotateMesh.cpp.obj: dyndep
+
+build lib\CMakeFiles\Multithreading_lib.dir\src\ThreadManager.cpp.obj: dyndep
+

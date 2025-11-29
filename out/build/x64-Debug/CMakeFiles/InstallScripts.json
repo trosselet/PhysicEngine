@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/Thomas/Documents/GitHub/PhysicEngine/out/build/x64-Debug/cmake_install.cmake",
+		"C:/Users/Thomas/Documents/GitHub/PhysicEngine/out/build/x64-Debug/lib/cmake_install.cmake",
+		"C:/Users/Thomas/Documents/GitHub/PhysicEngine/out/build/x64-Debug/exec/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
