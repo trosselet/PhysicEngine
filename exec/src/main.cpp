@@ -5,7 +5,7 @@
 int main()
 {
     Application app;
-    app.StartUp(false, AttractorType::None);
+    app.StartUp(true, AttractorType::None);
     app.ClearUp();
 
     return 0;

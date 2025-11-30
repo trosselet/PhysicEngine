@@ -24,7 +24,7 @@ public:
 
 	template<class ComponentClass> bool HasComponent() const;
 	template<class ComponentClass> ComponentClass const& GetComponent() const;
-	template<class ComponentClass> ComponentClass& GetComponent();
+	template<class ComponentClass> ComponentClass* GetComponent();
 	template<class ComponentClass> ComponentClass& AddComponent();
 	template<class ComponentClass> void RemoveComponent();
 
@@ -80,7 +80,6 @@ inline T* GameObject::AddScript(Args && ...args)
 	script->OnStart();
 	m_scripts.push_back(script);
 	GameManager::GetScriptSystem().m_scriptsByEntity[GetId()].push_back(script);
-	GameManager::GetScriptSystem().m_entityToRemove[GetId()] = false;
 	return script;
 }
 
@@ -113,9 +112,9 @@ inline ComponentClass const& GameObject::GetComponent() const
 }
 
 template<class ComponentClass>
-inline ComponentClass& GameObject::GetComponent()
+inline ComponentClass* GameObject::GetComponent()
 {
-	return *static_cast<ComponentClass*>(m_components[ComponentClass::Tag]);
+	return static_cast<ComponentClass*>(m_components[ComponentClass::Tag]);
 }
 
 template <>
@@ -150,7 +149,10 @@ inline Camera& GameObject::AddComponent<Camera>()
 	m_pScene->m_cameras.push_back(pCamera);
 	pCamera->m_pOwner = this;
 	m_pScene->m_camerasToCreate.push_back(pCamera);
-	if (m_pScene->m_pMainCamera == nullptr) m_pScene->m_pMainCamera = pCamera->m_pOwner;
+	if (m_pScene->m_pMainCamera == nullptr) 
+	{
+		m_pScene->m_pMainCamera = pCamera->m_pOwner;
+	}
 
 	m_components[Camera::Tag] = pCamera;
 	m_componentBitmask |= 1 << (Camera::Tag - 1);
